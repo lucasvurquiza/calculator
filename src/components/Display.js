@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from 'react'
+import { StyleSheet, View, Text } from 'react-native'
 
 const styles = StyleSheet.create({
     display: {
@@ -13,11 +13,12 @@ const styles = StyleSheet.create({
         fontSize: 60,
         color: '#FFF'
     }
-});
+})
 
 export default props => {
-    <View style={styles.display}>
-        <Text style={styles.displayValue}
-            numberOfLines={1}>{props.value}</Text>
+    return(
+        <View style={styles.display}>
+        <Text style={styles.displayValue} numberOfLines={1}>{props.value}</Text>
     </View>
+    )
 }
